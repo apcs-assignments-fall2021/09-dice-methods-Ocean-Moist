@@ -41,7 +41,6 @@ public class MyMain {
             if (y >= 2) {
                 x++;
             }
-            y = 0;
         }
 
         return x/100;
@@ -50,9 +49,9 @@ public class MyMain {
     // Calculate the probability of rolling at least three 6's when rolling
     // eighteen dice. Uses 10000 trials.
     public static double probabilityThreeSixes() {
-        int y = 0;
         int x = 0;
         for (int i = 0; i < 10000; i++) {
+            int y = 0;
             for (int j = 0; j < 18; j++) {
                 if (rollDie() == 6) {
                     y++;
@@ -61,7 +60,6 @@ public class MyMain {
             if (y >= 3) {
                 x++;
             }
-            y = 0;
         }
 
         return x/100;
