@@ -18,7 +18,7 @@ public class MyMain {
         for (int i = 0; i < 10000; i++) {
             for (int j = 0; j < 6; j++) {
                 if (rollDie() == 6) {
-                    x += 1;
+                    x++;
                     break;
                 }
             }
@@ -35,11 +35,11 @@ public class MyMain {
         for (int i = 0; i < 10000; i++) {
             for (int j = 0; j < 12; j++) {
                 if (rollDie() == 6) {
-                    y += 1;
+                    y++;
                 }
             }
             if (y >= 2) {
-                x += 1;
+                x++;
             }
             y = 0;
         }
@@ -55,11 +55,11 @@ public class MyMain {
         for (int i = 0; i < 10000; i++) {
             for (int j = 0; j < 18; j++) {
                 if (rollDie() == 6) {
-                    y += 1;
+                    y++;
                 }
             }
             if (y >= 3) {
-                x += 1;
+                x++;
             }
             y = 0;
         }
