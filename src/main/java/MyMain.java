@@ -41,8 +41,8 @@ public class MyMain {
             if (y >= 2) {
                 x++;
             }
+            y = 0;
         }
-
         return x/100;
     }
 
